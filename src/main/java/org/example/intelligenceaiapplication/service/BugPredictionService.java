@@ -7,7 +7,7 @@ public class BugPredictionService {
 
     public String predictSeverity(String description){
         String lower = description.toLowerCase();
-
+//Determines the Log Levels or Priority
         if(lower.contains("null"))
             return "High";
         else if(lower.contains("slow")||lower.contains("performance"))
